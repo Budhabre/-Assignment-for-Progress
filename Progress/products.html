@@ -1,12 +1,560 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>ShoesShop</title>
+    <script>
+      $(document).ready(function(){
+        
+          $("#bestt").animate({left: '600px'}, 3000);
+          $("#bestt").animate({fontSize: "25px"}, "slow");
+      });
+        </script>
 </head>
 <body>
-    Products
+    <header>
+        <nav>
+            <ul>
+                <li class="nav-item"><a href="./index.html">Home</a></li>
+                <li class="nav-item"><a href="./products.html">Products</a></li>
+                <li class="nav-item"><a href="#">About us</a></li>
+                <li class="nav-item"><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+        </header>
+    <section>
+        <h1 class="page-title">
+     SHOES SHOP
+        </h1>
+       
+          <div class="wrapper">
+            <div class="container">
+                <div class="card">
+                  <div class="card-head blue">
+                    
+                    <img src="./Images/pngegg (1).png" alt="Shoe" class="product-img"width="250px">
+                    <div class="product-detail">
+                      
+                    </div>
+                    
+                  </div>
+                  <div class="card-body">
+                    <div class="product-desc">
+                      <span class="product-title">
+                              Hartbee<b>spoort</b>
+                              <span class="badge">
+                                New
+                              </span>
+                      </span>
+                      <span class="product-caption">
+                              Basket Ball Collection
+                            </span>
+                      <span class="product-rating">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star grey"></i>
+                            </span>
+                    </div>
+                    <div class="product-properties">
+                      <span class="product-size">
+                              <h4>Size</h4>
+                              <ul class="ul-size">
+                                <li><a href="#">7</a></li>
+                                <li><a href="#">8</a></li>
+                                <li><a href="#">9</a></li>
+                                <li><a href="#" class="active">10</a></li>
+                                <li><a href="#">11</a></li>
+                              </ul>
+                            </span>
+                      <span class="product-color">
+                              <h4>Colour</h4>
+                              <ul class="ul-color">
+                                <li onclick="Change(event)"><a href="#" class="orange active" ></a></li>
+                                <li onclick="Change(event)"><a href="#" class="green"></a></li>
+                                <li onclick="Change(event)"><a href="#" class="yellow"></a></li>
+                              </ul>
+                            </span>
+                      <span class="product-price">
+                              USD<b>23,453</b>
+                            </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+               <div class="container">
+                <div class="card">
+                  <div class="card-head red" id="best">
+                    
+                    <img src="./Images/kindpng_1753289.png" alt="Shoe" class="product-img"width="200px">
+                    <div class="product-detail">
+                      
+                    </div>
+                    
+                  </div>
+                  <div class="card-body">
+                    <div class="product-desc">
+                      <span class="product-title">
+                              Hartbee<b>spoort</b>
+                              <span class="badge">
+                                New
+                              </span>
+                      </span>
+                      <span class="product-caption">
+                              Running Collection
+                            </span>
+                      <span class="product-rating">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star grey"></i>
+                            </span>
+                    </div>
+                    <div class="product-properties">
+                      <span class="product-size">
+                              <h4>Size</h4>
+                              <ul class="ul-size">
+                                <li><a href="#">7</a></li>
+                                <li><a href="#">8</a></li>
+                                <li><a href="#">9</a></li>
+                                <li><a href="#" class="active">10</a></li>
+                                <li><a href="#">11</a></li>
+                              </ul>
+                            </span>
+                      <span class="product-color">
+                              <h4>Colour</h4>
+                              <ul class="ul-color">
+                                <li onclick="Change(event)"><a href="#" class="orange active"></a></li>
+                                <li onclick="Change(event)"><a href="#" class="green"></a></li>
+                                <li onclick="Change(event)"><a href="#" class="yellow"></a></li>
+                              </ul>
+                            </span>
+                      <span class="product-price">
+                              USD<b>32,80</b>
+                            </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="card">
+                  <div class="card-head green">
+                    
+                    <img src="./Images/pngegg.png" alt="Shoe" class="product-img"width="250px">
+                    <div class="product-detail">
+                      
+                    </div>
+                    
+                  </div>    
+                  <div class="card-body">
+                    <div class="product-desc">
+                      <span class="product-title">
+                              Hartbee<b>spoort</b>
+                              <span class="badge">
+                                New
+                              </span>
+                      </span>
+                      <span class="product-caption">
+                              LifeStyle Collection
+                            </span>
+                      <span class="product-rating">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star grey"></i>
+                            </span>
+                    </div>
+                    <div class="product-properties">
+                      <span class="product-size">
+                              <h4>Size</h4>
+                              <ul class="ul-size">
+                                <li><a href="#">7</a></li>
+                                <li><a href="#">8</a></li>
+                                <li><a href="#">9</a></li>
+                                <li><a href="#" class="active">10</a></li>
+                                <li><a href="#">11</a></li>
+                              </ul>
+                            </span>
+                      <span class="product-color">
+                              <h4>Colour</h4>
+                              <ul class="ul-color">
+                                <li onclick="Change(event)"><a href="" class="orange active" ></a></li>
+                                <li onclick="Change(event)"><a href="" class="green" ></a></li>
+                                <li onclick="Change(event)"><a href="" class="yellow"></a></li>
+                              </ul>
+                            </span>
+                      <span class="product-price">
+                              USD<b>23,453</b>
+                            </span>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+    
+          </div>
+          
+        </section>
+        
+        <section>
+           
+           
+              <div class="wrapper">
+                <div class="container">
+                    <div class="card">
+                      <div class="card-head blue">
+                        
+                        <img src="./Images/pngegg (1).png" alt="Shoe" class="product-img"width="250px">
+                        <div class="product-detail">
+                          
+                        </div>
+                        
+                      </div>
+                      <div class="card-body">
+                        <div class="product-desc">
+                          <span class="product-title">
+                                  Hartbee<b>spoort</b>
+                                  <span class="badge">
+                                    New
+                                  </span>
+                          </span>
+                          <span class="product-caption">
+                                  Basket Ball Collection
+                                </span>
+                          <span class="product-rating">
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star grey"></i>
+                                </span>
+                        </div>
+                        <div class="product-properties">
+                          <span class="product-size">
+                                  <h4>Size</h4>
+                                  <ul class="ul-size">
+                                    <li><a href="#">7</a></li>
+                                    <li><a href="#">8</a></li>
+                                    <li><a href="#">9</a></li>
+                                    <li><a href="#" class="active">10</a></li>
+                                    <li><a href="#">11</a></li>
+                                  </ul>
+                                </span>
+                          <span class="product-color">
+                                  <h4>Colour</h4>
+                                  <ul class="ul-color">
+                                    <li onclick="Change(event)"><a href="#" class="orange active" ></a></li>
+                                    <li onclick="Change(event)"><a href="#" class="green"></a></li>
+                                    <li onclick="Change(event)"><a href="#" class="yellow"></a></li>
+                                  </ul>
+                                </span>
+                          <span class="product-price">
+                                  USD<b>23,453</b>
+                                </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                   <div class="container">
+                    <div class="card">
+                      <div class="card-head red" id="best">
+                        
+                        <img src="./Images/kindpng_1753289.png" alt="Shoe" class="product-img"width="200px">
+                        <div class="product-detail">
+                          
+                        </div>
+                        
+                      </div>
+                      <div class="card-body">
+                        <div class="product-desc">
+                          <span class="product-title">
+                                  Hartbee<b>spoort</b>
+                                  <span class="badge">
+                                    New
+                                  </span>
+                          </span>
+                          <span class="product-caption">
+                                  Running Collection
+                                </span>
+                          <span class="product-rating">
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star grey"></i>
+                                </span>
+                        </div>
+                        <div class="product-properties">
+                          <span class="product-size">
+                                  <h4>Size</h4>
+                                  <ul class="ul-size">
+                                    <li><a href="#">7</a></li>
+                                    <li><a href="#">8</a></li>
+                                    <li><a href="#">9</a></li>
+                                    <li><a href="#" class="active">10</a></li>
+                                    <li><a href="#">11</a></li>
+                                  </ul>
+                                </span>
+                          <span class="product-color">
+                                  <h4>Colour</h4>
+                                  <ul class="ul-color">
+                                    <li onclick="Change(event)"><a href="#" class="orange active"></a></li>
+                                    <li onclick="Change(event)"><a href="#" class="green"></a></li>
+                                    <li onclick="Change(event)"><a href="#" class="yellow"></a></li>
+                                  </ul>
+                                </span>
+                          <span class="product-price">
+                                  USD<b>32,80</b>
+                                </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="card">
+                      <div class="card-head green">
+                        
+                        <img src="./Images/pngegg.png" alt="Shoe" class="product-img"width="250px">
+                        <div class="product-detail">
+                          
+                        </div>
+                        
+                      </div>    
+                      <div class="card-body">
+                        <div class="product-desc">
+                          <span class="product-title">
+                                  Hartbee<b>spoort</b>
+                                  <span class="badge">
+                                    New
+                                  </span>
+                          </span>
+                          <span class="product-caption">
+                                  LifeStyle Collection
+                                </span>
+                          <span class="product-rating">
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star grey"></i>
+                                </span>
+                        </div>
+                        <div class="product-properties">
+                          <span class="product-size">
+                                  <h4>Size</h4>
+                                  <ul class="ul-size">
+                                    <li><a href="#">7</a></li>
+                                    <li><a href="#">8</a></li>
+                                    <li><a href="#">9</a></li>
+                                    <li><a href="#" class="active">10</a></li>
+                                    <li><a href="#">11</a></li>
+                                  </ul>
+                                </span>
+                          <span class="product-color">
+                                  <h4>Colour</h4>
+                                  <ul class="ul-color">
+                                    <li onclick="Change(event)"><a href="" class="orange active" ></a></li>
+                                    <li onclick="Change(event)"><a href="" class="green" ></a></li>
+                                    <li onclick="Change(event)"><a href="" class="yellow"></a></li>
+                                  </ul>
+                                </span>
+                          <span class="product-price">
+                                  USD<b>23,453</b>
+                                </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+        
+              </div>
+              
+            </section>
+            <section>
+           
+           
+                <div class="wrapper">
+                  <div class="container">
+                      <div class="card">
+                        <div class="card-head blue">
+                          
+                          <img src="./Images/pngegg (1).png" alt="Shoe" class="product-img"width="250px">
+                          <div class="product-detail">
+                            
+                          </div>
+                          
+                        </div>
+                        <div class="card-body">
+                          <div class="product-desc">
+                            <span class="product-title">
+                                    Hartbee<b>spoort</b>
+                                    <span class="badge">
+                                      New
+                                    </span>
+                            </span>
+                            <span class="product-caption">
+                                    Basket Ball Collection
+                                  </span>
+                            <span class="product-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star grey"></i>
+                                  </span>
+                          </div>
+                          <div class="product-properties">
+                            <span class="product-size">
+                                    <h4>Size</h4>
+                                    <ul class="ul-size">
+                                      <li><a href="#">7</a></li>
+                                      <li><a href="#">8</a></li>
+                                      <li><a href="#">9</a></li>
+                                      <li><a href="#" class="active">10</a></li>
+                                      <li><a href="#">11</a></li>
+                                    </ul>
+                                  </span>
+                            <span class="product-color">
+                                    <h4>Colour</h4>
+                                    <ul class="ul-color">
+                                      <li onclick="Change(event)"><a href="#" class="orange active" ></a></li>
+                                      <li onclick="Change(event)"><a href="#" class="green"></a></li>
+                                      <li onclick="Change(event)"><a href="#" class="yellow"></a></li>
+                                    </ul>
+                                  </span>
+                            <span class="product-price">
+                                    USD<b>23,453</b>
+                                  </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                     <div class="container">
+                      <div class="card">
+                        <div class="card-head red" id="best">
+                          
+                          <img src="./Images/kindpng_1753289.png" alt="Shoe" class="product-img"width="200px">
+                          <div class="product-detail">
+                            
+                          </div>
+                          
+                        </div>
+                        <div class="card-body">
+                          <div class="product-desc">
+                            <span class="product-title">
+                                    Hartbee<b>spoort</b>
+                                    <span class="badge">
+                                      New
+                                    </span>
+                            </span>
+                            <span class="product-caption">
+                                    Running Collection
+                                  </span>
+                            <span class="product-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star grey"></i>
+                                  </span>
+                          </div>
+                          <div class="product-properties">
+                            <span class="product-size">
+                                    <h4>Size</h4>
+                                    <ul class="ul-size">
+                                      <li><a href="#">7</a></li>
+                                      <li><a href="#">8</a></li>
+                                      <li><a href="#">9</a></li>
+                                      <li><a href="#" class="active">10</a></li>
+                                      <li><a href="#">11</a></li>
+                                    </ul>
+                                  </span>
+                            <span class="product-color">
+                                    <h4>Colour</h4>
+                                    <ul class="ul-color">
+                                      <li onclick="Change(event)"><a href="#" class="orange active"></a></li>
+                                      <li onclick="Change(event)"><a href="#" class="green"></a></li>
+                                      <li onclick="Change(event)"><a href="#" class="yellow"></a></li>
+                                    </ul>
+                                  </span>
+                            <span class="product-price">
+                                    USD<b>32,80</b>
+                                  </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="card">
+                        <div class="card-head green">
+                          
+                          <img src="./Images/pngegg.png" alt="Shoe" class="product-img"width="250px">
+                          <div class="product-detail">
+                            
+                          </div>
+                          
+                        </div>    
+                        <div class="card-body">
+                          <div class="product-desc">
+                            <span class="product-title">
+                                    Hartbee<b>spoort</b>
+                                    <span class="badge">
+                                      New
+                                    </span>
+                            </span>
+                            <span class="product-caption">
+                                    LifeStyle Collection
+                                  </span>
+                            <span class="product-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star grey"></i>
+                                  </span>
+                          </div>
+                          <div class="product-properties">
+                            <span class="product-size">
+                                    <h4>Size</h4>
+                                    <ul class="ul-size">
+                                      <li><a href="#">7</a></li>
+                                      <li><a href="#">8</a></li>
+                                      <li><a href="#">9</a></li>
+                                      <li><a href="#" class="active">10</a></li>
+                                      <li><a href="#">11</a></li>
+                                    </ul>
+                                  </span>
+                            <span class="product-color">
+                                    <h4>Colour</h4>
+                                    <ul class="ul-color">
+                                      <li onclick="Change(event)"><a href="" class="orange active" ></a></li>
+                                      <li onclick="Change(event)"><a href="" class="green" ></a></li>
+                                      <li onclick="Change(event)"><a href="" class="yellow"></a></li>
+                                    </ul>
+                                  </span>
+                            <span class="product-price">
+                                    USD<b>23,453</b>
+                                  </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div> 
+          
+                </div>
+                
+              </section>
+              
+       
+          <script src="./index.js"></script>
+       
 </body>
 </html>
